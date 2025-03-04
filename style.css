@@ -1,0 +1,39 @@
+html {
+    background-color: lightgrey;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 16px;
+}
+
+h1{
+    color: navy;
+}
+
+h2 {
+    color:blueviolet;
+}
+
+h3 {
+    color: whitesmoke;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+p {
+    color:coral;
+}
+
+table {
+    border: 2px solid darkorchid;
+
+}
+
+tr th{
+    background-color: rgb(221, 160, 221);
+}
+
+tr td {
+    border-top: 2px solid rgb(153, 50, 204);
+}
+
+.element {
+    background-color: beige;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS selectors and specificity</h1>
+    <h2>Let's start with Basic CSS Selectors</h2>
+    <h3>Type Selectors</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Selector</th>
+                <th>Specificity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class = "element">&lt;body&gt; </span></td>
+                <td>body{}</td>
+                <td>0-0-1</td>
+            </tr>
+            <tr>
+                <td><span class = "element">&lt;html&gt; </span></td>
+                <td>html{}</td>
+                <td>0-0-1</td>
+            </tr>
+            <tr>
+                <td><span class = "element">&lt;h1&gt; </span></td>
+                <td>h1{}</td>
+                <td>0-0-1</td>
+            </tr>
+            <tr>
+                <td><span class = "element">&lt;p&gt; </span></td>
+                <td>p{}</td>
+                <td>0-0-1</td>
+            </tr>
+            <tr>
+                <td><span class = "element">&lt;span&gt; </span></td>
+                <td>span{}</td>
+                <td>0-0-1</td>
+            </tr>
+            <tr>
+                <td><span class = "element">&lt;em&gt; </span></td>
+                <td>em{}</td>
+                <td>0-0-1</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Class selectors</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Selector</th>
+                <th>Specificity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;body class= "highlight"&gt;</td>
+                <td>body.highlight{}</td>
+                <td>0-1-1</td>
+            </tr>
+            <tr>
+                <td>&lt;span class= "highlight"&gt;</td>
+                <td>span.highlight{}</td>
+                <td>0-1-1</td>
+            </tr>
+            <tr>
+                <td>&lt;h1 class= "highlight"&gt;</td>
+                <td>h1.highlight{}</td>
+                <td>0-1-1</td>
+            </tr>
+            <tr>
+                <td>&lt;div class= "notebox"&gt;</td>
+                <td>div.notebox{}</td>
+                <td>0-1-1</td>
+            </tr>
+            <tr>
+                <td>&lt;div class= "notebox warning"&gt;</td>
+                <td>div.notebox.warning{}</td>
+                <td>0-2-1</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>ID selectors</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Selector</th>
+                <th>Specificity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;h1 id="heading"&gt;</h1></td>
+                <td>h1#heading{}</td>
+                <td>1-0-1</td>
+            </tr>
+            <tr>
+                <td>&lt;p id="one"&gt;</td>
+                <td>p#one{}</td>
+                <td>1-0-1</td>
+            </tr>
+            <tr>
+                <td>&lt;h1 id="heading"&gt;</td>
+                <td>#heading{}</td>
+                <td>1-0-0</td>
+            </tr>
+            <tr>
+                <td>&lt;h1 id="one"&gt;</td>
+                <td>#one{}</td>
+                <td>1-0-0</td>
+            </tr>
+            <tr>
+                <td>&lt;p id="header"&gt;</td>
+                <td>p[id="header"]{}</td>
+                <td>1-0-1</td>
+            </tr>
+            <tr>
+                <td>&lt;h1 id="header"&gt;</td>
+                <td>h1,<br> #header{}</td>
+                <td>0-0-1<br>1-0-0</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors">Basic CSS selectors</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors">CSS selectors</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Pseudo_classes_and_elements">Pseudo-classes and pseudo-elements</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts">Handling conflicts</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Combinators">Combinators</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator">Descendant combinator</a><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator">Child combinator</a>
+</body>
+</html>
